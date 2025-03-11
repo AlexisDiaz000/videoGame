@@ -28,18 +28,28 @@ public class EjercicioVideoJuego {
         listaVideoJuegos.add(video4);
         listaVideoJuegos.add(video5);
         
+        
         for(VideoJuego video : listaVideoJuegos){
-            System.out.println("Titulo: " +video.getTitulo()+ "Consola " +video.getConsola()+
-                    "Cantidad Jugadores: " + video.getCantJugadores());
-            
+            System.out.println("Titulo: " + video.getTitulo()+ " Consola: " + video.getConsola()+
+                    " Cantidad Jugadores: " + video.getCantJugadores());
+        } 
+
          video1.setTitulo("halo");
          video1.setCantJugadores(2);
          
          video2.setCantJugadores(3);
          video2.setTitulo("halo reach");
-         
-            
-        }
+         System.out.println("------------------------------------");
+         for(VideoJuego video : listaVideoJuegos){
+            if (video.getConsola().equals("Nintendo 64")){
+                System.out.println(video.toString());
+                
+            }
+        }    
+    
+
+
+
         
         
     }

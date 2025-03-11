@@ -59,6 +59,19 @@ public class VideoJuego {
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("VideoJuego{");
+        sb.append("codigo=").append(codigo);
+        sb.append(", titulo=").append(titulo);
+        sb.append(", consola=").append(consola);
+        sb.append(", cantJugadores=").append(cantJugadores);
+        sb.append(", categoria=").append(categoria);
+        sb.append('}');
+        return sb.toString();
+    }
     
     
     
